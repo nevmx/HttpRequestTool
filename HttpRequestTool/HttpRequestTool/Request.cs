@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace HttpRequestTool
 {
-    class Request
+    public class Request
     {
         private int id { get; set; }
-        private String requestString { get; set; }
+        public string RequestString { get; set; }
 
         // Constructor
-        public Request(int id, String requestString)
+        public Request(int id, string requestString)
         {
             this.id = id;
-            this.requestString = requestString;
+            this.RequestString = requestString;
         }
     }
 }
